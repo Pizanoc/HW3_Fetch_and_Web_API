@@ -1,0 +1,142 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #cfd8dc;
+}
+
+/* Main container */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Search section */
+.search-section {
+    background-color: #ffffff;
+    color: #000;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Label */
+label {
+    font-weight: bold;
+}
+
+/* Input field */
+input[type="text"] {
+    padding: 12px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Button */
+button {
+    padding: 12px 20px;
+    background-color: #00c853;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #00a844;
+}
+
+/* Message text */
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Error message */
+.error {
+    color: red;
+}
+
+/* Success message */
+.success {
+    color: green;
+}
+
+/* Results grid */
+.results-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Character card */
+.character-card {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+/* Card hover effect */
+.character-card:hover {
+    transform: scale(1.05);
+}
+
+/* Character image */
+.character-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Character name */
+.character-card h2 {
+    margin: 15px 0 10px 0;
+}
+
+/* Character info text */
+.character-card p {
+    margin: 5px 10px;
+    font-size: 0.9rem;
+}
